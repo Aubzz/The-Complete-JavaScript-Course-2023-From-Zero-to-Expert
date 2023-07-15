@@ -74,7 +74,7 @@ console.log(ageSarha >= 18);
 const isFullAge = ageSarha >= 18;
 
 console.log(now - 1991 > now - 2018);
-*/
+
 
 const now = 2037;
 const ageJonas = now - 1991;
@@ -90,3 +90,6 @@ x = y = 25 - 10 - 5; // x = y = 10
 
 const averageAge = (ageJonas + ageSarha) / 2;
 console.log(ageJonas, ageSarha, averageAge);
+*/
+
+
