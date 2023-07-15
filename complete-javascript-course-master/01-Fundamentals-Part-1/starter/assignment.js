@@ -16,12 +16,19 @@ language = "Tagalog";
 // LECTURE: Basic Operators
 const eachHalf = population / 2;
 console.log(eachHalf);
+
 population++;
+
 let finland = 6000000;
 console.log(population > finland);
+
 let averagePopulation = 33000000;
-console.log(country < averagePopulation);
-console.log(population);
+console.log(population < averagePopulation);
 let description =
   "Philippines is in Asia, and its 109.84 million people speaks Tagalog";
+console.log(description);
+
+// LECTURE: Strings and Template Literals
+
+description = `Philippines is in Asia, and its 109.84 million people speaks Tagalog`;
 console.log(description);
