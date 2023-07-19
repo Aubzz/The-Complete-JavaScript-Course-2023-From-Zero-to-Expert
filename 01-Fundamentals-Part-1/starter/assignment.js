@@ -41,3 +41,18 @@ if (population > averagePopulation) {
     `Philippines population is ${averagePopulation - population} below average`
   );
 }
+
+// LECTURE: Equality Operators: == vs. ===
+
+const numNeighbors = Number(
+  prompt("How many neighbour countries does your country have?")
+);
+console.log(numNeighbors);
+
+if (numNeighbors === 1) {
+  console.log("Only 1 border");
+} else if (numNeighbors > 1) {
+  console.log("More than 1 border");
+} else {
+  console.log("No borders");
+}
