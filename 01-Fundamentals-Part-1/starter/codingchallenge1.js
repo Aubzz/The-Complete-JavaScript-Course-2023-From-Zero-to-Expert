@@ -80,3 +80,23 @@ if (BMIMark > BMIJohn) {
   console.log(`John's BMI (${BMIJohn}) is higher than Mark's BMI (${BMIMark})`);
 }
 */
+
+// Challenge #3
+let aveScoreDolphin = (96 + 108 + 89) / 3;
+let aveScoreKoalas = (88 + 91 + 110) / 3;
+console.log(aveScoreDolphin, aveScoreKoalas);
+
+if (aveScoreDolphin > aveScoreKoalas) {
+  console.log(`The winners of the competition is Dolphins`);
+} else if (aveScoreDolphin === aveScoreKoalas) {
+  console.log("It's a DRAW!");
+} else {
+  console.log(`The winner of the competition is Koalas`);
+}
+
+// Another test data
+let scoreDolphin = (97 + 112 + 101) / 3;
+let scoreKoalas = (109 + 95 + 123) / 3;
+console.log(scoreDolphin, scoreKoalas);
+
+// if (scoreDolphin < scoreKoalas && scoreDolphin <=)
