@@ -82,16 +82,19 @@ if (BMIMark > BMIJohn) {
 */
 
 // Challenge #3
-let aveScoreDolphin = (96 + 108 + 89) / 3;
-let aveScoreKoalas = (88 + 91 + 110) / 3;
-console.log(aveScoreDolphin, aveScoreKoalas);
+const aveDolphin = (97 + 112 + 112) / 3;
+const aveKoalas = (109 + 95 + 106) / 3;
 
-if (aveScoreDolphin > aveScoreKoalas) {
-  console.log(`The winners of the competition is Dolphins`);
-} else if (aveScoreDolphin === aveScoreKoalas) {
-  console.log("It's a DRAW!");
+if (aveDolphin > aveKoalas && aveDolphin >= 100) {
+  console.log(
+    `Dolphin win the competition with the average score of ${aveDolphin}`
+  );
+} else if (aveKoalas > aveDolphin && aveKoalas >= 100) {
+  console.log(`Koalas win the competition with the average score ${aveKoalas}`);
+} else if (aveDolphin === aveKoalas && aveDolphin >= 100 && aveKoalas >= 100) {
+  console.log("DRAW!");
 } else {
-  console.log(`The winner of the competition is Koalas`);
+  console.log("No one wins the trophy");
 }
 
 // Another test data
@@ -151,9 +154,11 @@ if (day === "monday") {
 //   }`
 // );
 
-const bill = 400;
-const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+const bills = 275;
+const tips = bills <= 300 && bills >= 50 ? bills * 0.15 : bills * 0.2;
 
 console.log(
-  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+  `The bill was ${bills}, the tip was ${tips}, and the total value ${
+    bills + tips
+  }`
 );
