@@ -5,13 +5,17 @@ let population = 109840000;
 console.log(country, continent, population);
 
 // LECTURE: Data Types
-let isIsland = 7640;
+// let isIsland = true;
 let language;
-console.log(isIsland, population, country, language);
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+console.log(typeof language);
 
 // LECTURE: let, const and var
 language = "Tagalog";
-// continent = "Europe";
+const isIsland = true;
+isIsland = false;
 
 // LECTURE: Basic Operators
 const eachHalf = population / 2;
@@ -24,23 +28,39 @@ console.log(population > finland);
 
 let averagePopulation = 33000000;
 console.log(population < averagePopulation);
-let description =
-  "Philippines is in Asia, and its 109.84 million people speaks Tagalog";
-console.log(description);
+// let description =
+//   "Philippines is in Asia, and its 109.84 million people speaks Tagalog";
+const description1 =
+  country +
+  " is in " +
+  continent +
+  ", and its " +
+  population +
+  "million people speak" +
+  language;
+console.log(description1);
 
 // LECTURE: Strings and Template Literals
-
-description = `Philippines is in Asia, and its 109.84 million people speaks Tagalog`;
-console.log(description);
+description1 = `${country} is in ${continent}, and its ${population} people speaks ${language}`;
+console.log(description1);
 
 // LECTURE: Taking Decisions: if / else Statements
 if (population > averagePopulation) {
-  console.log("Philippines population is above the average");
+  console.log(`${country} population is above the average`);
 } else {
   console.log(
-    `Philippines population is ${averagePopulation - population} below average`
+    `${country} population is ${
+      averagePopulation - population
+    } million below average`
   );
 }
+
+// LECTURE: Type Conversion and Coercion
+console.log("9" + "5"); // 4
+console.log("19" - "13" + "17"); // '617'
+console.log("19" - "13" + 17); // 23
+console.log("123" < 57); // false
+console.log(5 + 6 + "4" + 9 - 4 - 2); // 1143
 
 // LECTURE: Equality Operators: == vs. ===
 
