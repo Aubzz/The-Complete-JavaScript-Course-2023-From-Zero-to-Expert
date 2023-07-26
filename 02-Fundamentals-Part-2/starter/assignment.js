@@ -24,6 +24,15 @@ const percentageOfWorld2 = function (population) {
   return (population / 7900) * 100;
 };
 const percentagePH = percentageOfWorld2(109);
-const percentageThailand = percentageOfWorld2(71);
+const percentageKorea = percentageOfWorld2(51);
 const percentageChina = percentageOfWorld2(1441);
-console.log(percentagePH, percentageThailand, percentageChina);
+console.log(percentagePH, percentageKorea, percentageChina);
+
+// LECTURE: Arrow Functions
+const percentageOfWorld3 = (population) => {
+  return (population / 7900) * 100;
+};
+const percentagePhil = percentageOfWorld2(109);
+const percentageKor = percentageOfWorld2(51);
+const percentageChi = percentageOfWorld2(1441);
+console.log(percentagePH, percentageKorea, percentageChina);
