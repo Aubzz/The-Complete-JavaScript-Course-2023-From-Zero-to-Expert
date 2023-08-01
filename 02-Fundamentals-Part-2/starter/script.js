@@ -114,3 +114,12 @@ const friend3 = "Peter";
 
 const friends = ["Michael", "Steven", "Peter"];
 console.log(friends);
+
+// Another way
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+c;
