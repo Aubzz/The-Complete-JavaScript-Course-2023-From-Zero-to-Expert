@@ -106,6 +106,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1991, "Aubrey"));
 console.log(yearsUntilRetirement(1950, "Sofia"));
 */
+
 // ARRAYS
 
 const friend1 = "Michael";
@@ -116,10 +117,27 @@ const friends = ["Michael", "Steven", "Peter"];
 console.log(friends);
 
 // Another way
-const years = new Array(1991, 1984, 2008, 2020);
+const year = new Array(1991, 1984, 2008, 2020);
 
 console.log(friends[0]);
 console.log(friends[2]);
 
 console.log(friends.length);
-c;
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jonas";
+console.log(friends);
+// friends = ["Bea", "Ava"];
+
+const firstName = "Ava";
+const ava = [firstName, "Silva", 2023 - 2004, "warrior nun", friends];
+console.log(ava);
+
+// Exercise
+const calcAge = function (birthYear) {
+  return 2023 - birthYear;
+};
+const years = [1990, 1967, 2002, 2010, 2018];
+
+// Not gonna work
+console.log(calcAge(years));
