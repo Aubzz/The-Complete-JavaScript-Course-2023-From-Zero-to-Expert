@@ -105,7 +105,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement(1991, "Aubrey"));
 console.log(yearsUntilRetirement(1950, "Sofia"));
-*/
+
 
 // ARRAYS
 
@@ -154,3 +154,24 @@ const ages = [
   calcAge(years[years.length - 1]),
 ];
 console.log(ages);
+*/
+
+const friends = ["Michael", "Steven", "Peter"];
+
+// Add element to the end
+const newLength = friends.push("Jay");
+console.log(friends);
+console.log(newLength);
+
+// Add element to the beginning
+friends.unshift("John");
+console.log(friends);
+
+// Remove elements
+friends.pop();
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();
+console.log(friends);
