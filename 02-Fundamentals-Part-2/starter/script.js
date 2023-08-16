@@ -139,5 +139,18 @@ const calcAge = function (birthYear) {
 };
 const years = [1990, 1967, 2002, 2010, 2018];
 
-// Not gonna work
-console.log(calcAge(years));
+// Not gonna work bcs years has already been declared.
+// We change that declared variable into something else
+// console.log(calcAge(years));
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1]),
+];
+console.log(ages);
