@@ -175,3 +175,15 @@ console.log(friends);
 
 friends.shift();
 console.log(friends);
+
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Ava"));
+
+friends.push(23);
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Ava"));
+console.log(friends.includes(23));
+
+if (friends.includes("Michael")) {
+  console.log("You have a friend called Michael");
+}
